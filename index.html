@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODEWRITERS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="imagenes/icono.png">
+</head>
+
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="imagenes/fondo.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="imagenes/logo.png" alt="logo">
+      <span>CODEWRITERS</span>
+    </div>
+
+    <ul class="nav-links" id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#quienes">Nosotros</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="actions">
+      <button id="themeToggle">🌙</button>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <h1>Transformamos ideas en software</h1>
+    <p>Desarrollo web moderno, rápido y profesional</p>
+    <button id="btnComenzar">Comenzar</button>
+  </section>
+
+ <!-- QUIÉNES SOMOS -->
+<section id="quienes" class="section">
+  <div class="quienes-card">
+    <div class="quienes-content">
+      <div class="quienes-header">
+        <!-- Logo de CodeWriters integrado -->
+        <img src="imagenes/logo.png" alt="Logo CodeWriters" class="quienes-logo-img"> 
+        <h2>Quiénes Somos</h2>
+      </div>
+
+      <p>
+        En <strong>CODEWRITERS</strong> no seguimos tendencias, las construimos. 
+        Somos un equipo que entiende que hoy en día no basta con “tener una página” o “hacer una app”: 
+        necesitas presencia, impacto y una experiencia que realmente conecte con las personas.
+      </p>
+
+      <p>
+        Diseñamos y desarrollamos soluciones digitales con intención. Cada línea de código, cada interfaz 
+        y cada interacción está pensada para transmitir valor, generar confianza y posicionarte por encima 
+        de lo común. No trabajamos con plantillas genéricas ni soluciones recicladas; construimos desde cero, 
+        con identidad propia.
+      </p>
+
+      <p>
+        Nos especializamos en desarrollo web moderno, aplicaciones dinámicas y arquitecturas escalables 
+        utilizando tecnologías actuales como MongoDB y MySQL, asegurando rendimiento, estabilidad y crecimiento 
+        a largo plazo. Pero más allá de la tecnología, lo que realmente nos define es cómo la usamos.
+      </p>
+
+      <p>
+        Entendemos que cada proyecto representa una idea, un esfuerzo y una visión. Por eso no trabajamos como 
+        simples desarrolladores, sino como socios estratégicos que se involucran en cada detalle para convertir 
+        conceptos en productos digitales sólidos, atractivos y funcionales.
+      </p>
+
+      <p>
+        Nuestro objetivo no es solo que tu proyecto funcione, sino que destaque. Que se vea profesional. 
+        Que transmita nivel. Que marque diferencia.
+      </p>
+
+      <p>
+        Porque al final, cualquiera puede crear algo básico… pero muy pocos pueden crear algo que realmente se sienta diferente.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section id="catalogo" class="section">
+    <div class="section-header">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones digitales modernas conectadas a bases de datos de alto rendimiento.</p>
+    </div>
+
+    <div class="catalogo-grid">
+      <div class="producto-card">
+        <div class="producto-img-container">
+            <img src="imagenes/software.jpg" alt="Desarrollo de Software">
+        </div>
+        <div class="producto-info">
+            <h3>Desarrollo de Software</h3>
+            <p>Sistemas completos desde cero: análisis, diseño, desarrollo e implementación.</p>
+            <span class="tech-tag">MongoDB, Firebase, MySQL</span>
+            <a href="https://wa.me/527752750326?text=Hola,%20quiero%20un%20sistema%20de%20software" class="btn-servicio" target="_blank">Solicitar servicio</a>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-container">
+            <img src="imagenes/frameworks.jpg" alt="Frameworks">
+        </div>
+        <div class="producto-info">
+            <h3>Desarrollo con Frameworks</h3>
+            <p>Uso de tecnologías modernas y metodologías ágiles para sistemas eficientes.</p>
+            <span class="tech-tag">APIs + Base de datos</span>
+            <a href="https://wa.me/527752750326?text=Hola,%20quiero%20un%20sistema%20con%20frameworks" class="btn-servicio" target="_blank">Solicitar servicio</a>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-container">
+            <img src="imagenes/database.jpg" alt="Bases de Datos">
+        </div>
+        <div class="producto-info">
+            <h3>Bases de Datos</h3>
+            <p>Diseño e implementación de bases de datos relacionales y no relacionales.</p>
+            <span class="tech-tag">MongoDB, Firebase, SQL</span>
+            <a href="https://wa.me/527752750326?text=Hola,%20necesito%20una%20base%20de%20datos" class="btn-servicio" target="_blank">Solicitar servicio</a>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-container">
+            <img src="imagenes/web.jpg" alt="Aplicaciones Web">
+        </div>
+        <div class="producto-info">
+            <h3>Aplicaciones Web</h3>
+            <p>Sitios y sistemas web modernos, rápidos y totalmente responsivos.</p>
+            <span class="tech-tag">Backend + Base de datos</span>
+            <a href="https://wa.me/527752750326?text=Hola,%20quiero%20una%20página%20web" class="btn-servicio" target="_blank">Solicitar servicio</a>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-container">
+            <img src="imagenes/mobile.jpg" alt="Apps móviles">
+        </div>
+        <div class="producto-info">
+            <h3>Aplicaciones Móviles</h3>
+            <p>Apps multiplataforma con alto rendimiento y conexión en tiempo real.</p>
+            <span class="tech-tag">Firebase o MongoDB</span>
+            <a href="https://wa.me/527752750326?text=Hola,%20quiero%20una%20app%20móvil" class="btn-servicio" target="_blank">Solicitar servicio</a>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-img-container">
+            <img src="imagenes/admin.jpg" alt="Sistemas administrativos">
+        </div>
+        <div class="producto-info">
+            <h3>Sistemas Administrativos</h3>
+            <p>Sistemas con login, control de usuarios, inventarios y panel admin.</p>
+            <span class="tech-tag">Base de datos completa</span>
+            <a href="https://wa.me/527752750326?text=Hola,%20quiero%20un%20sistema%20administrativo" class="btn-servicio" target="_blank">Solicitar servicio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2 class="titulo-equipo">Nuestro Equipo</h2>
+    <p class="sub-equipo">Personas reales, talento real. Contacta directamente con nosotros.</p>
+
+    <div class="equipo-container">
+      <div class="perfil-card">
+        <div class="perfil-img-box">
+          <img src="imagenes/eduardo.png" alt="Eduardo">
+          <span class="badge">Founder</span>
+        </div>
+        <div class="perfil-info">
+          <h3>Eduardo Josue Santos Vargas</h3>
+          <p class="perfil-desc">Especialista en desarrollo moderno, diseño visual y experiencias digitales de alto impacto.</p>
+          <div class="botones-perfil">
+            <a href="mailto:eduardojosuesantos23@cbtis179.edu.mx" title="Email">📧</a>
+            <a href="tel:7752750326" title="Llamar">📞</a>
+            <a href="https://wa.me/527752750326" target="_blank" title="WhatsApp">💬</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="perfil-card">
+        <div class="perfil-img-box">
+          <img src="imagenes/ruben.png" alt="Ruben">
+          <span class="badge">Developer</span>
+        </div>
+        <div class="perfil-info">
+          <h3>Ruben Diaz Perez</h3>
+          <p class="perfil-desc">Enfocado en rendimiento, lógica y construcción de sistemas eficientes y confiables.</p>
+          <div class="botones-perfil">
+            <a href="mailto:rubendiaz23@cbtis179.edu.mx" title="Email">📧</a>
+            <a href="tel:7751579381" title="Llamar">📞</a>
+            <a href="https://wa.me/527751579381" target="_blank" title="WhatsApp">💬</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/527752750326?text=Hola,%20quiero%20información" class="whatsapp-btn" target="_blank">💬</a>
+
+  <footer class="footer">
+    <p>© 2026 CODEWRITERS - CAMINAMOS JUNTOS AL FUTURO</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
